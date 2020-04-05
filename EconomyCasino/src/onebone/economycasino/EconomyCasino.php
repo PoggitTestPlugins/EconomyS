@@ -46,6 +46,7 @@ class EconomyCasino extends PluginBase implements Listener{
 	public function onEnable(){
 		@mkdir($this->getDataFolder());
 		$this->api = EconomyAPI::getInstance();
+		$this->api->testFunction("LOL");
 		$this->config = new Config($this->getDataFolder()."config.yml", Config::YAML, array(
 			"jackpot-winning" => 1000,
 			"jackpot-money" => 5,
